@@ -82,11 +82,11 @@
                   </TableView>
                </children>
             </HBox>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="639.0" spacing="10.0">
                <children>
-                  <Button fx:id="buttonView" mnemonicParsing="false" onAction="#buttonShowHandle" prefHeight="30.0" prefWidth="90.0" text="Show" textFill="WHITE">
+                  <Button fx:id="buttonView" mnemonicParsing="false" onAction="#buttonViewHandle" prefHeight="30.0" prefWidth="90.0" text="View" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="14.0" />
+                        <Font name="System Bold" size="13.0" />
                      </font>
                      <stylesheets>
                         <URL value="@styles.css" />
@@ -95,16 +95,16 @@
                   </Button>
                   <Button fx:id="buttonAdd" mnemonicParsing="false" onAction="#buttonAddHandle" prefHeight="30.0" prefWidth="90.0" text="Add" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="14.0" />
+                        <Font name="System Bold" size="13.0" />
                      </font>
                      <stylesheets>
                         <URL value="@styles.css" />
                         <URL value="@styles.css" />
                      </stylesheets>
                   </Button>
-                  <Button fx:id="buttonEdit" mnemonicParsing="false" onAction="#buttonUpdateHandle" prefHeight="30.0" prefWidth="90.0" text="Update" textFill="WHITE">
+                  <Button fx:id="buttonEdit" mnemonicParsing="false" onAction="#buttonEditHandle" prefHeight="30.0" prefWidth="90.0" text="Edit" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="14.0" />
+                        <Font name="System Bold" size="13.0" />
                      </font>
                      <stylesheets>
                         <URL value="@styles.css" />
@@ -113,7 +113,7 @@
                   </Button>
                   <Button fx:id="buttonDelete" mnemonicParsing="false" onAction="#buttonDeleteHandle" prefHeight="30.0" prefWidth="90.0" text="Delete" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="14.0" />
+                        <Font name="System Bold" size="13.0" />
                      </font>
                      <stylesheets>
                         <URL value="@styles.css" />
@@ -128,6 +128,11 @@
                         <URL value="@styles.css" />
                         <URL value="@styles.css" />
                      </stylesheets>
+                  </Button>
+                  <Button fx:id="buttonRegister" mnemonicParsing="false" onAction="#buttonRegisterHandle" stylesheets="@styles.css" text="Register" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
                   </Button>
                </children>
                <padding>

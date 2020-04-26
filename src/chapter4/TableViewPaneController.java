@@ -21,6 +21,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -60,6 +61,8 @@ public class TableViewPaneController implements Initializable {
     private TableColumn<Student, String> tcMajor;
     @FXML
     private TableColumn<Student, Double> tcGrade;
+    @FXML
+    private Button buttonRegister;
     
 
     /**
@@ -152,6 +155,15 @@ public class TableViewPaneController implements Initializable {
         txtFieldGrade.setText(String.valueOf(student.getGrade()));
         }
 
+    }
+
+    @FXML
+    private void buttonRegisterHandle(ActionEvent event) {
+        try{
+        new RegisterRun().start(new Stage());
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
     }
     
 }
